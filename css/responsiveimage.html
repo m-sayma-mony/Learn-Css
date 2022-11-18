@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Image</title>
+	<base href="images/">
+	<style type="text/css">
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<picture>
+		<source srcset="img_lights.jpg" media="(max-width: 400px)">
+		<source src="img_mountains.jpg">
+			<img src="img_mountains.jpg" alt="Flowers" style="width: auto;">
+	</picture>
+
+	<img src="bgimg.jpg" width="460" height="345">
+</body>
+</html>

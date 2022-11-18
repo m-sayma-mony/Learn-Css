@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Sidebar</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		ul.sidenav{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 25%;
+			background-color: cyan;
+			position: fixed;
+			height: 100%;
+			overflow: auto;
+		}
+		ul.sidenav li a{
+			display: block;
+			color: black;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+		ul.sidenav li a.active{
+			background-color: blue;
+			color: white;
+		}
+		ul.sidenav li a:hover:not(.active){
+			background-color: gray;
+			color: white;
+		}
+		div.content{
+			margin-left: 25%;
+			padding: 1px 16px;
+			height: 1000px;
+		}
+		@media screen and(max-width: 900px){
+			ul.sidenav{
+				width: 100%;
+				height: auto;
+				position: relative;
+			}
+			ul.sidenav li a{
+				float: left;
+				padding: 15px;
+			}
+			div.content{
+				margin-left: 0;
+			}
+		}
+		@media screen and (max-width: 400px){
+			ul.sidenav li a{
+				text-align: center;
+				float: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<ul class="sidenav">
+		<li><a class="active" href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>
+
+	<div class="content">
+		<h2>Hello, How are you ? How can i help you ?</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</body>
+</html>

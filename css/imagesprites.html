@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<base href="images/">
+	<style type="text/css">
+		#navlist{
+			position: relative;
+		}
+		#navlist li{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			position: absolute;
+			top: 0;
+		}
+		#navlist li, #navlist a{
+			height: 44px;
+			display: block;
+		}
+		#home{
+			left: 0px;
+			width: 46px;
+			background: url('house.png') 0 0;
+			background-repeat: no-repeat;
+		}
+		#prev{
+			left: 63px;
+			width: 43px;
+			background: url('next.png') -47px 0;
+			background-repeat: no-repeat;
+		}
+		#next{
+			left: 129px;
+			width: 43px;
+			background: url('back.png') -91px 0;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<ul id="navlist">
+		<li><a id="home" href="https://www.w3schools.com/"></a></li>
+		<li><a id="prev" href="https://www.lipsum.com/"></a></li>
+		<li><a id="next" href="https://www.wikipedia.org/"></a></li>
+	</ul>
+</body>
+</html>

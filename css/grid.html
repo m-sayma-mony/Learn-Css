@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			background-color: #eee;
+			font-family: Arial;
+			text-align: center;
+		}
+		main{
+			width: 75%;
+			margin: 10px auto;
+			border: 1px solid #ddd;
+			color: white;
+			display: grid;
+			grid-template-rows: 60px 100px 200px 60px;
+			grid-template-columns: repeat(3, 1fr) 150px;
+			grid-gap: 10px;
+		}
+		.div1{background-color: tomato;
+			grid-column: 1/-1;
+		}
+		.div2{background-color: green;}
+		.div3{background-color: blue;}
+		.div4{background-color: cyan;}
+		.div5{background-color: pink;
+			grid-row: 2/4;
+			grid-column: 4/5;
+		}
+		.div6{background-color: orange;
+			grid-column: 1/4;
+		}
+		.div7{background-color: skyblue;
+			grid-column: 1/-1;
+		}
+	</style>
+	<body>
+		<main>
+			<div class="div1">Header</div>
+			<div class="div2">Box 1</div>
+			<div class="div3">Box 2</div>
+			<div class="div4">Box 3</div>
+			<div class="div5">Sidebar</div>
+			<div class="div6">Main content</div>
+			<div class="div7">Footer</div>
+		</main>
+	</body>
+</html>

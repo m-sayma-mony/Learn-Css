@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>overflow</title>
+	<style type="text/css">
+		#overflowText{
+			background: cyan;
+			color: black;
+			padding: 15px;
+			width: 50%;
+			height: 100px;
+			overflow: scroll;
+			border: 1px solid blue;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		.box{
+			float: left;
+			width: 33.33%;
+			padding: 50px;
+		}
+		.clear::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+		il{
+			float: left;
+		}
+		li a{
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover{
+			background-color: #111;
+		}
+		.active{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="overflowText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+	<div class="clear">
+		<div class="box" style="background-color: cyan;"><p>Some text inside the box.</p></div>
+		<div class="box" style="background-color: blue;"><p>Some text inside the box.</p></div>
+		<div class="box" style="background-color: hotpink;"><p>Some text inside the box.</p></div>
+	</div>
+	<ul>
+		<li><a href="#home" class="active">Home</a></li>
+		<li><a href="#news">News</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>
+</body>
+</html>
